@@ -53,7 +53,8 @@ export default {
     "@nuxt/http",
     // TODO: Remove it if you want to eject from codeSandbox
     "./codesandbox",
-    "@nuxtjs/bulma"
+    "@nuxtjs/bulma",
+    "@nuxtjs/axios"
   ],
 
   /*

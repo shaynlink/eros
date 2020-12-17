@@ -5,7 +5,7 @@
   "author": "Nuxt.js Team",
   "private": true,
   "scripts": {
-    "dev": "MINIMAL=1 CSB=1 nuxt",
+    "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -13,8 +13,10 @@
   },
   "dependencies": {
     "@nuxt/http": "0.6.1",
+    "@nuxtjs/axios": "^5.12.4",
     "@nuxtjs/bulma": "1.3.0",
     "bulma": "0.9.1",
+    "byte-size": "^7.0.0",
     "nuxt": "2.14.12",
     "reqlim": "^0.0.0"
   }

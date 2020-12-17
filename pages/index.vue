@@ -20,6 +20,10 @@
                 </a>
                 !
               </p>
+              <p class="subtitle">API states: {{
+                APIReady == 'WAITING' ? 'Await for acknowledge 🛰' :
+                APIReady == 'READY' ? 'All working 🚀' : 'API not available, website not working ❌'
+                }}</p>
             </div>
             <div class="column is-6">
               <img
@@ -38,9 +42,14 @@
 import { name } from "~/package.json";
 
 export default {
+  async fetch() {
+    this.APIReady = await this.$axios.get(`https://eropy-tvd3bgsfya-uc.a.run.app/`)
+    .then(() => 'READY').catch(() => 'ERROR');
+  },
   data() {
     return {
       name,
+      APIReady: 'WAITING',
     };
   },
 };
