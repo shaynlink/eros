@@ -27,7 +27,7 @@
         </aside>
       </div>
       <div class="column is-11">
-        <NuxtChild />
+        <NuxtChild keep-alive />
       </div>
     </div>
   </section>
