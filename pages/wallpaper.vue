@@ -10,7 +10,7 @@
                 <NuxtLink
                   :to="`/wallpaper/${slist.name}`"
                   :class="
-                    $router.path == `/wallpaper/${slist.name}`
+                    $route.params.id == slist.name
                       ? 'is-active'
                       : ''
                   "

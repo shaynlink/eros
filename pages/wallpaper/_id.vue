@@ -15,7 +15,7 @@
             <div class="media">
               <div class="media-content">
                 <p class="subtitle is-6">
-                  {{ item.name.split(/\//g).pop().split(/./g).shift() }}
+                  {{ item.name }}
                 </p>
               </div>
             </div>

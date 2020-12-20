@@ -25,10 +25,6 @@ export default {
         type: "image/jpg",
         href: "https://avatarfiles.alphacoders.com/263/263237.jpg"
       },
-      {
-        rel: "stylesheet",
-        href: "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
-      }
     ],
     script: [
       {
@@ -77,13 +73,14 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { },
+    postcss: {
+      preset: {
+        features: {
+          customProperties: false
+        },
+      },
+    },
+    cssSourceMap: true,
   },
-  postcss: {
-    preset: {
-      features: {
-        customProperties: false
-      }
-    }
-  }
 };
