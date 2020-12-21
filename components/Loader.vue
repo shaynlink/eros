@@ -14,9 +14,9 @@
 
 <style scoped>
 .nloader {
-  position: absolute;
-  top: calc(50% - 32px);
-  left: calc(50% - 32px);
+  position: relative;
+  top: auto;
+  left: auto;
   width: 64px;
   height: 64px;
   border-radius: 50%;

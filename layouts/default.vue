@@ -1,8 +1,8 @@
 <template>
-<section>
-  <navbar />
-   <Nuxt />
-</section>
+  <section>
+    <navbar />
+    <Nuxt />
+  </section>
 </template>
 
 <script>

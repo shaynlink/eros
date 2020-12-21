@@ -4359,6 +4359,11 @@
   "resolved" "https://registry.npmjs.org/human-signals/-/human-signals-1.1.1.tgz"
   "version" "1.1.1"
 
+"humanize@^0.0.9":
+  "integrity" "sha1-GZT/rs3+nEQe0r2sdFK3u0yeQaQ="
+  "resolved" "https://registry.npmjs.org/humanize/-/humanize-0.0.9.tgz"
+  "version" "0.0.9"
+
 "iconv-lite@^0.4.24":
   "integrity" "sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA=="
   "resolved" "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.24.tgz"

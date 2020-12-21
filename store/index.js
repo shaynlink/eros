@@ -10,6 +10,7 @@ export const state = () => ({
         api: 'WAITING',
         ws: 'WAITING',
     },
+    auditlogs: [],
 });
 
 export const mutations = {
@@ -51,5 +52,14 @@ export const mutations = {
 
     updateServices(state, service) {
         state.services = Object.assign(state.services, service);
+    },
+
+    pushAuditLogs(state, auditlog) {
+        if (Array.isArray(auditlog)) state.auditlog = state.auditlogs.concat(auditlog);
+        else state.auditlogs.push(auditlog);
+    },
+
+    setAuditLogs(state, auditlog) {
+        state.auditlog = auditlog;
     },
 };
